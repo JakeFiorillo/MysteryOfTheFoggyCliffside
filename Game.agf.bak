@@ -2164,7 +2164,7 @@
                   <Event Index="0" />
                   <Event Index="1" />
                   <Event Index="2" />
-                  <Event Index="3" />
+                  <Event Index="3">iTopLeftPuzzle_UseInv</Event>
                   <Event Index="4" />
                 </Interactions>
               </InventoryItem>
@@ -2182,7 +2182,7 @@
                   <Event Index="0" />
                   <Event Index="1" />
                   <Event Index="2" />
-                  <Event Index="3" />
+                  <Event Index="3">iBottomLeftPuzzle_UseInv</Event>
                   <Event Index="4" />
                 </Interactions>
               </InventoryItem>
@@ -2200,7 +2200,7 @@
                   <Event Index="0" />
                   <Event Index="1" />
                   <Event Index="2" />
-                  <Event Index="3" />
+                  <Event Index="3">iTopRightPuzzle_UseInv</Event>
                   <Event Index="4" />
                 </Interactions>
               </InventoryItem>
@@ -2218,7 +2218,7 @@
                   <Event Index="0" />
                   <Event Index="1" />
                   <Event Index="2" />
-                  <Event Index="3" />
+                  <Event Index="3">iBottomRightPuzzle_UseInv</Event>
                   <Event Index="4" />
                 </Interactions>
               </InventoryItem>
@@ -2236,7 +2236,7 @@
                   <Event Index="0" />
                   <Event Index="1" />
                   <Event Index="2" />
-                  <Event Index="3" />
+                  <Event Index="3">iTopPieces_UseInv</Event>
                   <Event Index="4" />
                 </Interactions>
               </InventoryItem>
@@ -2254,7 +2254,7 @@
                   <Event Index="0" />
                   <Event Index="1" />
                   <Event Index="2" />
-                  <Event Index="3" />
+                  <Event Index="3">iBottomPieces_UseInv</Event>
                   <Event Index="4" />
                 </Interactions>
               </InventoryItem>
@@ -2272,7 +2272,7 @@
                   <Event Index="0" />
                   <Event Index="1" />
                   <Event Index="2" />
-                  <Event Index="3" />
+                  <Event Index="3">iLeftPieces_UseInv</Event>
                   <Event Index="4" />
                 </Interactions>
               </InventoryItem>
@@ -2290,7 +2290,7 @@
                   <Event Index="0" />
                   <Event Index="1" />
                   <Event Index="2" />
-                  <Event Index="3" />
+                  <Event Index="3">iRightPieces_UseInv</Event>
                   <Event Index="4" />
                 </Interactions>
               </InventoryItem>
@@ -2308,7 +2308,7 @@
                   <Event Index="0" />
                   <Event Index="1" />
                   <Event Index="2" />
-                  <Event Index="3" />
+                  <Event Index="3">iMissingBR_UseInv</Event>
                   <Event Index="4" />
                 </Interactions>
               </InventoryItem>
@@ -2326,7 +2326,7 @@
                   <Event Index="0" />
                   <Event Index="1" />
                   <Event Index="2" />
-                  <Event Index="3" />
+                  <Event Index="3">iMissingBL_UseInv</Event>
                   <Event Index="4" />
                 </Interactions>
               </InventoryItem>
@@ -2344,7 +2344,7 @@
                   <Event Index="0" />
                   <Event Index="1" />
                   <Event Index="2" />
-                  <Event Index="3" />
+                  <Event Index="3">iMissingTR_UseInv</Event>
                   <Event Index="4" />
                 </Interactions>
               </InventoryItem>
@@ -2362,7 +2362,7 @@
                   <Event Index="0" />
                   <Event Index="1" />
                   <Event Index="2" />
-                  <Event Index="3" />
+                  <Event Index="3">iMissingTL_UseInv</Event>
                   <Event Index="4" />
                 </Interactions>
               </InventoryItem>
@@ -2653,7 +2653,7 @@
             <Interactions>
               <Event Index="0" />
               <Event Index="1" />
-              <Event Index="2" />
+              <Event Index="2">cPolice_Talk</Event>
               <Event Index="3" />
               <Event Index="4" />
               <Event Index="5" />
@@ -2760,6 +2760,19 @@ stop
                 <Text xml:space="preserve">Yeah there were a couple pieces of ripped paper</Text>
               </DialogOption>
             </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>3</ID>
+            <Name>dPaper</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cPolice: "What did those papers say?"
+cDet: "Its got the numbers 4927 and this brown door-looking thing"
+cPolice: "Hmm. Not much to go off of with that right now. Maybe start talking to some of the townspeople"
+stop
+]]></Script>
+            <DialogOptions />
           </Dialog>
         </Dialogs>
       </DialogFolder>
