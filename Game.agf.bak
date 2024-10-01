@@ -1022,14 +1022,14 @@
           <GUIMain>
             <NormalGUI>
               <BackgroundColor>0</BackgroundColor>
-              <BackgroundImage>2169</BackgroundImage>
+              <BackgroundImage>40</BackgroundImage>
               <BorderColor>0</BorderColor>
               <Clickable>True</Clickable>
               <Height>133</Height>
               <ID>2</ID>
               <Left>50</Left>
               <Name>gInventory</Name>
-              <OnClick />
+              <OnClick>gInventory_OnClick</OnClick>
               <PopupStyle>PopupModal</PopupStyle>
               <PopupYPos>0</PopupYPos>
               <Top>35</Top>
@@ -1043,17 +1043,17 @@
                 <CharacterID>-1</CharacterID>
                 <Clickable>True</Clickable>
                 <Enabled>True</Enabled>
-                <Height>87</Height>
+                <Height>68</Height>
                 <ID>0</ID>
-                <ItemHeight>21</ItemHeight>
-                <ItemWidth>21</ItemWidth>
-                <Left>8</Left>
+                <ItemHeight>32</ItemHeight>
+                <ItemWidth>32</ItemWidth>
+                <Left>45</Left>
                 <Locked>False</Locked>
                 <Name>invCustom</Name>
-                <Top>8</Top>
+                <Top>23</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>174</Width>
+                <Width>133</Width>
                 <ZOrder>0</ZOrder>
               </GUIInventory>
               <GUIButton>
@@ -1062,23 +1062,23 @@
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
                 <Font>0</Font>
-                <Height>27</Height>
+                <Height>28</Height>
                 <ID>1</ID>
-                <Image>2116</Image>
-                <Left>39</Left>
+                <Image>42</Image>
+                <Left>7</Left>
                 <Locked>False</Locked>
-                <MouseoverImage>2117</MouseoverImage>
+                <MouseoverImage>43</MouseoverImage>
                 <Name>btnInvSelect</Name>
                 <NewModeNumber>2</NewModeNumber>
                 <OnClick>btnInvSelect_Click</OnClick>
-                <PushedImage>2118</PushedImage>
+                <PushedImage>43</PushedImage>
                 <Text xml:space="preserve">New Button</Text>
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>16</TextColor>
-                <Top>101</Top>
+                <Top>55</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>32</Width>
+                <Width>28</Width>
                 <ZOrder>1</ZOrder>
               </GUIButton>
               <GUIButton>
@@ -1087,20 +1087,20 @@
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
                 <Font>0</Font>
-                <Height>27</Height>
+                <Height>32</Height>
                 <ID>2</ID>
-                <Image>2104</Image>
-                <Left>4</Left>
+                <Image>39</Image>
+                <Left>7</Left>
                 <Locked>False</Locked>
-                <MouseoverImage>2105</MouseoverImage>
+                <MouseoverImage>41</MouseoverImage>
                 <Name>btnInvLook</Name>
                 <NewModeNumber>1</NewModeNumber>
                 <OnClick />
-                <PushedImage>2106</PushedImage>
+                <PushedImage>41</PushedImage>
                 <Text xml:space="preserve">New Button</Text>
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>16</TextColor>
-                <Top>101</Top>
+                <Top>23</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
                 <Width>32</Width>
@@ -1112,23 +1112,23 @@
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
                 <Font>0</Font>
-                <Height>19</Height>
+                <Height>20</Height>
                 <ID>3</ID>
-                <Image>2160</Image>
-                <Left>147</Left>
+                <Image>48</Image>
+                <Left>75</Left>
                 <Locked>False</Locked>
-                <MouseoverImage>0</MouseoverImage>
+                <MouseoverImage>49</MouseoverImage>
                 <Name>btnInvOK</Name>
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>close_gui_onclick</OnClick>
-                <PushedImage>2161</PushedImage>
-                <Text>Close</Text>
+                <PushedImage>49</PushedImage>
+                <Text />
                 <TextAlignment>MiddleCenter</TextAlignment>
                 <TextColor>19248</TextColor>
-                <Top>107</Top>
+                <Top>101</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>71</Width>
+                <Width>73</Width>
                 <ZOrder>3</ZOrder>
               </GUIButton>
               <GUIButton>
@@ -1137,23 +1137,23 @@
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
                 <Font>0</Font>
-                <Height>27</Height>
+                <Height>28</Height>
                 <ID>4</ID>
-                <Image>2144</Image>
+                <Image>46</Image>
                 <Left>188</Left>
                 <Locked>False</Locked>
-                <MouseoverImage>2145</MouseoverImage>
+                <MouseoverImage>47</MouseoverImage>
                 <Name>btnInvDown</Name>
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>btnInvDown_Click</OnClick>
-                <PushedImage>2146</PushedImage>
+                <PushedImage>47</PushedImage>
                 <Text xml:space="preserve">New Button</Text>
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>16</TextColor>
-                <Top>71</Top>
+                <Top>55</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>30</Width>
+                <Width>28</Width>
                 <ZOrder>4</ZOrder>
               </GUIButton>
               <GUIButton>
@@ -1162,23 +1162,23 @@
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
                 <Font>0</Font>
-                <Height>27</Height>
+                <Height>28</Height>
                 <ID>5</ID>
-                <Image>2147</Image>
+                <Image>44</Image>
                 <Left>188</Left>
                 <Locked>False</Locked>
-                <MouseoverImage>2148</MouseoverImage>
+                <MouseoverImage>45</MouseoverImage>
                 <Name>btnInvUp</Name>
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>btnInvUp_Click</OnClick>
-                <PushedImage>2149</PushedImage>
+                <PushedImage>45</PushedImage>
                 <Text xml:space="preserve">New Button</Text>
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>16</TextColor>
-                <Top>5</Top>
+                <Top>23</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>30</Width>
+                <Width>28</Width>
                 <ZOrder>5</ZOrder>
               </GUIButton>
             </Controls>
@@ -2749,8 +2749,9 @@ stop
 cPolice: Did you find any clues on the beach?
 return
 @1
-cPolice: Hmm. Maybe putting the pieces together will make a message
+cPolice: Maybe putting the pieces together will make a message
 stop
+
 ]]></Script>
             <DialogOptions>
               <DialogOption>
@@ -2773,6 +2774,42 @@ cPolice: "Hmm. Not much to go off of with that right now. Maybe start talking to
 stop
 ]]></Script>
             <DialogOptions />
+          </Dialog>
+          <Dialog>
+            <ID>4</ID>
+            <Name>dSamplesCompAndPaper</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cPolice: Did you find any clues on the beach?
+cDet: Yeah there were a couple pieces of ripped paper
+cPolice: Maybe putting the pieces together will make a message
+return
+@1
+cPolice: Oh. Did it say anything useful?
+cDet: Yeah. Its got the numbers 4927 and this brown door-looking thing
+cPolice: Hmm. Not much to go off of with that right now. Maybe start talking to some of the townspeople
+stop
+@2
+cPolice: What did it say?
+cDet: Its got the numbers 4927 and this brown door-looking thing
+cPolice: Hmm. Not much to go off of with that right now. Maybe start talking to some of the townspeople
+stop
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">Already did that</Text>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Say>True</Say>
+                <Show>True</Show>
+                <Text xml:space="preserve">They did make a message actually</Text>
+              </DialogOption>
+            </DialogOptions>
           </Dialog>
         </Dialogs>
       </DialogFolder>
@@ -3222,6 +3259,11 @@ stop
           <DefaultValue>0</DefaultValue>
           <Name>progress</Name>
           <Type>int</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <DefaultValue>false</DefaultValue>
+          <Name>samplesCompDialogue</Name>
+          <Type>bool</Type>
         </GlobalVariable>
       </Variables>
     </GlobalVariables>
@@ -4935,6 +4977,176 @@ stop
                       <OffsetY>0</OffsetY>
                       <ImportHeight>32</ImportHeight>
                       <ImportWidth>32</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
+              <SpriteFolder Name="Custom UI">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="40" Width="223" Height="133" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Inventory-1.png.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>133</ImportHeight>
+                      <ImportWidth>223</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="39" Width="28" Height="28" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\New Piskel-1.png (3).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>28</ImportHeight>
+                      <ImportWidth>28</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="41" Width="28" Height="28" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\New Piskel-1.png (4).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>28</ImportHeight>
+                      <ImportWidth>28</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="42" Width="28" Height="28" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\New Piskel-1.png (5).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>28</ImportHeight>
+                      <ImportWidth>28</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="43" Width="28" Height="28" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\New Piskel-1.png (6).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>28</ImportHeight>
+                      <ImportWidth>28</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="44" Width="28" Height="28" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\New Piskel-1.png (7).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>28</ImportHeight>
+                      <ImportWidth>28</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="45" Width="28" Height="28" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\New Piskel-1.png (8).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>28</ImportHeight>
+                      <ImportWidth>28</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="46" Width="28" Height="28" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\New Piskel-1.png (9).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>28</ImportHeight>
+                      <ImportWidth>28</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="47" Width="28" Height="28" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\New Piskel-1.png (10).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>28</ImportHeight>
+                      <ImportWidth>28</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="48" Width="73" Height="20" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\New Piskel-1.png (11).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>20</ImportHeight>
+                      <ImportWidth>73</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="49" Width="73" Height="20" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\New Piskel-1.png (12).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>20</ImportHeight>
+                      <ImportWidth>73</ImportWidth>
                       <ImportAsTile>False</ImportAsTile>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
