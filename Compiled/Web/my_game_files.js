@@ -1,0 +1,1 @@
+var gamefiles = ['audio.vox', 'MysteryOfTheFoggyCliffside.ags', 'acsetup.cfg'];

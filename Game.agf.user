@@ -19,7 +19,7 @@
   </Component>
   <WorkspaceState>
     <LastBuildConfiguration>Debug</LastBuildConfiguration>
-    <LastBuildGameFileName>DataFile=MysteryOfTheFoggyCliffside,Windows=MysteryOfTheFoggyCliffside,_Debug=MysteryOfTheFoggyCliffside,</LastBuildGameFileName>
+    <LastBuildGameFileName>DataFile=MysteryOfTheFoggyCliffside,Windows=MysteryOfTheFoggyCliffside,_Debug=MysteryOfTheFoggyCliffside,Web=MysteryOfTheFoggyCliffside,</LastBuildGameFileName>
     <RequiresRebuild>False</RequiresRebuild>
   </WorkspaceState>
 </AGSEditorUserData>

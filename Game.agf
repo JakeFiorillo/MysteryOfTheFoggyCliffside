@@ -12,10 +12,10 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>0</AudioIndexer>
+      <AudioIndexer>3</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
-      <BuildTargets>Windows</BuildTargets>
+      <BuildTargets xml:space="preserve">Windows, Web</BuildTargets>
       <ClipGUIControls>True</ClipGUIControls>
       <ColorDepth>TrueColor</ColorDepth>
       <CompressSpritesType>None</CompressSpritesType>
@@ -2406,6 +2406,24 @@
               <Event Index="4" />
             </Interactions>
           </InventoryItem>
+          <InventoryItem>
+            <CursorImage>2042</CursorImage>
+            <Description xml:space="preserve">Keys to Police Department</Description>
+            <HotspotX>0</HotspotX>
+            <HotspotY>0</HotspotY>
+            <ID>15</ID>
+            <Image>2042</Image>
+            <Name>iKeys</Name>
+            <PlayerStartsWithItem>True</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
         </InventoryItems>
       </InventoryItemFolder>
     </InventoryItems>
@@ -2675,14 +2693,14 @@
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
-cPolice: Holmes, we need you on this case
-cPolice: The Johnson's son has been found dead on the beach. He was missing for two days
+cPolice: HOLMES, we need you on this case IMMEDIATELY
+cPolice: The Johnson's son has been found DEAD on the beach. He was missing for TWO days
 return
 @1
-cPolice: Maybe go down to the beach and see if there is any clues you can find on the beach
+cPolice: Go over to the beach. Find some clues and come back IMMEDIATELY
 return
 @2
-cPolice: He had wounds in his chest and his legs were broken. We are assuming he was pushed off the cliff
+cPolice: He had wounds in his chest and his legs were broken. I AM assuming he was pushed off the cliff
 return
 @3
 cPolice: Very good
@@ -2716,13 +2734,13 @@ stop
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
-cPolice: Did you find any clues on the beach?
+cPolice: I am hoping you came back with some clues
 return
 @1
-cPolice: Maybe see if there is anything scattered on the edges of the beach
+cPolice: Go back NOW and check the sand
 stop
 @2
-cPolice: Ok. Keep checking and report back when you find more
+cPolice: Well go back NOW and report back to me IMMEDIATELY
 stop
 ]]></Script>
             <DialogOptions>
@@ -2746,10 +2764,10 @@ stop
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
-cPolice: Did you find any clues on the beach?
+cPolice: I am hoping you came back with some clues
 return
 @1
-cPolice: Maybe putting the pieces together will make a message
+cPolice: Well put them together and FIND a message
 stop
 
 ]]></Script>
@@ -2768,9 +2786,10 @@ stop
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
-cPolice: "What did those papers say?"
-cDet: "Its got the numbers 4927 and this brown door-looking thing"
-cPolice: "Hmm. Not much to go off of with that right now. Maybe start talking to some of the townspeople"
+cPolice: Tell me what those papers said
+cDet: They had the numbers 4927 and this brown door-looking thing
+cPolice: Hmm. I can't recall anything with that right now 
+cPolice: Go start talking to some of the townspeople
 stop
 ]]></Script>
             <DialogOptions />
@@ -2781,19 +2800,21 @@ stop
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
-cPolice: Did you find any clues on the beach?
+cPolice: I am hoping you came back with some clues
 cDet: Yeah there were a couple pieces of ripped paper
-cPolice: Maybe putting the pieces together will make a message
+cPolice: Well put them together and FIND a message
 return
 @1
-cPolice: Oh. Did it say anything useful?
-cDet: Yeah. Its got the numbers 4927 and this brown door-looking thing
-cPolice: Hmm. Not much to go off of with that right now. Maybe start talking to some of the townspeople
+cPolice: I DONT NEED NO SARCASM RIGHT NOW. Tell me what they said
+cDet: Its got the numbers 4927 and this brown door-looking thing
+cPolice: Hmm. I can't recall anything with that right now 
+cPolice: Go start talking to some of the townspeople
 stop
 @2
 cPolice: What did it say?
 cDet: Its got the numbers 4927 and this brown door-looking thing
-cPolice: Hmm. Not much to go off of with that right now. Maybe start talking to some of the townspeople
+cPolice: Hmm. I can't recall anything with that right now 
+cPolice: Go start talking to some of the townspeople
 stop
 ]]></Script>
             <DialogOptions>
@@ -3264,6 +3285,11 @@ stop
           <DefaultValue>false</DefaultValue>
           <Name>samplesCompDialogue</Name>
           <Type>bool</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <DefaultValue />
+          <Name>backMusic</Name>
+          <Type>AudioChannel*</Type>
         </GlobalVariable>
       </Variables>
     </GlobalVariables>
@@ -5919,7 +5945,21 @@ See KeyboardMovement.txt for details.
         <SubFolders>
           <AudioClipFolder Name="Music">
             <SubFolders />
-            <AudioClips />
+            <AudioClips>
+              <AudioClip>
+                <BundlingType>InSeparateVOX</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>0</ID>
+                <Index>2</Index>
+                <ScriptName>aGotothePicnic</ScriptName>
+                <SourceFileName>C:\Users\jfiorill\Downloads\Loyalty_Freak_Music_-_01_-_Go_to_the_Picnicchosic.com_(chosic.com).mp3</SourceFileName>
+                <Type>2</Type>
+                <FileLastModifiedDate>2024-10-02 15:13:46Z</FileLastModifiedDate>
+              </AudioClip>
+            </AudioClips>
             <AudioClipFolder>
               <DefaultBundlingType>InSeparateVOX</DefaultBundlingType>
               <DefaultPriority>Inherit</DefaultPriority>
@@ -5930,7 +5970,21 @@ See KeyboardMovement.txt for details.
           </AudioClipFolder>
           <AudioClipFolder Name="Sounds">
             <SubFolders />
-            <AudioClips />
+            <AudioClips>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>1</ID>
+                <Index>3</Index>
+                <ScriptName>aPickUp</ScriptName>
+                <SourceFileName>C:\Users\jfiorill\Downloads\3-up-1-89190.mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2024-10-02 15:30:47Z</FileLastModifiedDate>
+              </AudioClip>
+            </AudioClips>
             <AudioClipFolder>
               <DefaultBundlingType>InGameEXE</DefaultBundlingType>
               <DefaultPriority>Inherit</DefaultPriority>
