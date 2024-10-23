@@ -2733,7 +2733,7 @@
             <Interactions>
               <Event Index="0" />
               <Event Index="1" />
-              <Event Index="2" />
+              <Event Index="2">cMark_Talk</Event>
               <Event Index="3" />
               <Event Index="4" />
               <Event Index="5" />
@@ -2762,10 +2762,10 @@
             <ScriptName>cMandy</ScriptName>
             <Solid>True</Solid>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
-            <SpeechColor>12</SpeechColor>
+            <SpeechColor>64908</SpeechColor>
             <SpeechView>0</SpeechView>
             <StartX>87</StartX>
-            <StartY>119</StartY>
+            <StartY>118</StartY>
             <StartingRoom>4</StartingRoom>
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
@@ -2775,7 +2775,49 @@
             <Interactions>
               <Event Index="0" />
               <Event Index="1" />
-              <Event Index="2" />
+              <Event Index="2">cMandy_Talk</Event>
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6" />
+              <Event Index="7" />
+            </Interactions>
+          </Character>
+          <Character>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <AnimationDelay>4</AnimationDelay>
+            <BlinkingView>0</BlinkingView>
+            <Clickable>True</Clickable>
+            <DiagonalLoops>True</DiagonalLoops>
+            <ID>4</ID>
+            <IdleAnimationDelay>4</IdleAnimationDelay>
+            <IdleDelay>20</IdleDelay>
+            <IdleView>0</IdleView>
+            <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
+            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeedX>0</MovementSpeedX>
+            <MovementSpeedY>0</MovementSpeedY>
+            <NormalView>5</NormalView>
+            <Properties />
+            <RealName>Fisherman</RealName>
+            <ScriptName>cFisherman</ScriptName>
+            <Solid>True</Solid>
+            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <SpeechColor>52</SpeechColor>
+            <SpeechView>0</SpeechView>
+            <StartX>225</StartX>
+            <StartY>167</StartY>
+            <StartingRoom>3</StartingRoom>
+            <ThinkingView>0</ThinkingView>
+            <TurnBeforeWalking>True</TurnBeforeWalking>
+            <UniformMovementSpeed>True</UniformMovementSpeed>
+            <UseRoomAreaLighting>True</UseRoomAreaLighting>
+            <UseRoomAreaScaling>True</UseRoomAreaScaling>
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2">cFisherman_Talk</Event>
               <Event Index="3" />
               <Event Index="4" />
               <Event Index="5" />
@@ -2789,13 +2831,15 @@
     <PlayerCharacter>0</PlayerCharacter>
     <Dialogs>
       <DialogFolder Name="Main">
-        <SubFolders />
-        <Dialogs>
-          <Dialog>
-            <ID>0</ID>
-            <Name>dOpener</Name>
-            <ShowTextParser>False</ShowTextParser>
-            <Script><![CDATA[// Dialog script file
+        <SubFolders>
+          <DialogFolder Name="Police Dialogs">
+            <SubFolders />
+            <Dialogs>
+              <Dialog>
+                <ID>0</ID>
+                <Name>dOpener</Name>
+                <ShowTextParser>False</ShowTextParser>
+                <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
 cPolice: HOLMES, we need you on this case IMMEDIATELY
 cPolice: The Johnson's son has been found DEAD on the beach. He was missing for TWO days
@@ -2811,32 +2855,32 @@ cPolice: Very good
 stop
 
 ]]></Script>
-            <DialogOptions>
-              <DialogOption>
+                <DialogOptions>
+                  <DialogOption>
+                    <ID>1</ID>
+                    <Say>True</Say>
+                    <Show>True</Show>
+                    <Text xml:space="preserve">What should I start with?</Text>
+                  </DialogOption>
+                  <DialogOption>
+                    <ID>2</ID>
+                    <Say>True</Say>
+                    <Show>True</Show>
+                    <Text xml:space="preserve">How do you suspect he died?</Text>
+                  </DialogOption>
+                  <DialogOption>
+                    <ID>3</ID>
+                    <Say>True</Say>
+                    <Show>True</Show>
+                    <Text xml:space="preserve">I'll start immediately</Text>
+                  </DialogOption>
+                </DialogOptions>
+              </Dialog>
+              <Dialog>
                 <ID>1</ID>
-                <Say>True</Say>
-                <Show>True</Show>
-                <Text xml:space="preserve">What should I start with?</Text>
-              </DialogOption>
-              <DialogOption>
-                <ID>2</ID>
-                <Say>True</Say>
-                <Show>True</Show>
-                <Text xml:space="preserve">How do you suspect he died?</Text>
-              </DialogOption>
-              <DialogOption>
-                <ID>3</ID>
-                <Say>True</Say>
-                <Show>True</Show>
-                <Text xml:space="preserve">I'll start immediately</Text>
-              </DialogOption>
-            </DialogOptions>
-          </Dialog>
-          <Dialog>
-            <ID>1</ID>
-            <Name>dSamplesInc</Name>
-            <ShowTextParser>False</ShowTextParser>
-            <Script><![CDATA[// Dialog script file
+                <Name>dSamplesInc</Name>
+                <ShowTextParser>False</ShowTextParser>
+                <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
 cPolice: I am hoping you came back with some clues
 return
@@ -2847,26 +2891,26 @@ stop
 cPolice: Well go back NOW and report back to me IMMEDIATELY
 stop
 ]]></Script>
-            <DialogOptions>
-              <DialogOption>
-                <ID>1</ID>
-                <Say>True</Say>
-                <Show>True</Show>
-                <Text xml:space="preserve">Nothing yet</Text>
-              </DialogOption>
-              <DialogOption>
+                <DialogOptions>
+                  <DialogOption>
+                    <ID>1</ID>
+                    <Say>True</Say>
+                    <Show>True</Show>
+                    <Text xml:space="preserve">Nothing yet</Text>
+                  </DialogOption>
+                  <DialogOption>
+                    <ID>2</ID>
+                    <Say>True</Say>
+                    <Show>True</Show>
+                    <Text xml:space="preserve">Still working on it</Text>
+                  </DialogOption>
+                </DialogOptions>
+              </Dialog>
+              <Dialog>
                 <ID>2</ID>
-                <Say>True</Say>
-                <Show>True</Show>
-                <Text xml:space="preserve">Still working on it</Text>
-              </DialogOption>
-            </DialogOptions>
-          </Dialog>
-          <Dialog>
-            <ID>2</ID>
-            <Name>dSamplesComp</Name>
-            <ShowTextParser>False</ShowTextParser>
-            <Script><![CDATA[// Dialog script file
+                <Name>dSamplesComp</Name>
+                <ShowTextParser>False</ShowTextParser>
+                <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
 cPolice: I am hoping you came back with some clues
 return
@@ -2875,20 +2919,20 @@ cPolice: Well put them together and FIND a message
 stop
 
 ]]></Script>
-            <DialogOptions>
-              <DialogOption>
-                <ID>1</ID>
-                <Say>True</Say>
-                <Show>True</Show>
-                <Text xml:space="preserve">Yeah there were a couple pieces of ripped paper</Text>
-              </DialogOption>
-            </DialogOptions>
-          </Dialog>
-          <Dialog>
-            <ID>3</ID>
-            <Name>dPaper</Name>
-            <ShowTextParser>False</ShowTextParser>
-            <Script><![CDATA[// Dialog script file
+                <DialogOptions>
+                  <DialogOption>
+                    <ID>1</ID>
+                    <Say>True</Say>
+                    <Show>True</Show>
+                    <Text xml:space="preserve">Yeah there were a couple pieces of ripped paper</Text>
+                  </DialogOption>
+                </DialogOptions>
+              </Dialog>
+              <Dialog>
+                <ID>3</ID>
+                <Name>dPaper</Name>
+                <ShowTextParser>False</ShowTextParser>
+                <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
 cPolice: Tell me what those papers said
 cDet: They had the numbers 4927 and this brown door-looking thing
@@ -2896,13 +2940,13 @@ cPolice: Hmm. I can't recall anything with that right now
 cPolice: Go start talking to some of the townspeople
 stop
 ]]></Script>
-            <DialogOptions />
-          </Dialog>
-          <Dialog>
-            <ID>4</ID>
-            <Name>dSamplesCompAndPaper</Name>
-            <ShowTextParser>False</ShowTextParser>
-            <Script><![CDATA[// Dialog script file
+                <DialogOptions />
+              </Dialog>
+              <Dialog>
+                <ID>4</ID>
+                <Name>dSamplesCompAndPaper</Name>
+                <ShowTextParser>False</ShowTextParser>
+                <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
 cPolice: I am hoping you came back with some clues
 cDet: Yeah there were a couple pieces of ripped paper
@@ -2921,22 +2965,114 @@ cPolice: Hmm. I can't recall anything with that right now
 cPolice: Go start talking to some of the townspeople
 stop
 ]]></Script>
-            <DialogOptions>
-              <DialogOption>
-                <ID>1</ID>
-                <Say>True</Say>
-                <Show>True</Show>
-                <Text xml:space="preserve">Already did that</Text>
-              </DialogOption>
-              <DialogOption>
-                <ID>2</ID>
-                <Say>True</Say>
-                <Show>True</Show>
-                <Text xml:space="preserve">They did make a message actually</Text>
-              </DialogOption>
-            </DialogOptions>
-          </Dialog>
-        </Dialogs>
+                <DialogOptions>
+                  <DialogOption>
+                    <ID>1</ID>
+                    <Say>True</Say>
+                    <Show>True</Show>
+                    <Text xml:space="preserve">Already did that</Text>
+                  </DialogOption>
+                  <DialogOption>
+                    <ID>2</ID>
+                    <Say>True</Say>
+                    <Show>True</Show>
+                    <Text xml:space="preserve">They did make a message actually</Text>
+                  </DialogOption>
+                </DialogOptions>
+              </Dialog>
+            </Dialogs>
+          </DialogFolder>
+          <DialogFolder Name="Johnson Dialogs">
+            <SubFolders />
+            <Dialogs>
+              <Dialog>
+                <ID>5</ID>
+                <Name>dJohnsonIntro</Name>
+                <ShowTextParser>False</ShowTextParser>
+                <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cMark: Hi detective Holmes. Thanks for stopping by
+cDet: No problem. Do you have any information for me?
+cMandy: *sniff* Mark do you want to start? *sniff*
+cMark: Sure hun
+cMark: Two nights ago Mandy and I had an argument and Ollie ended up running to his room and shutting the door
+cMark: He doesn't like it when we argue
+cMark: A little while later Mandy went to go check on him
+cMandy: But then when I opened the door *sniff* he was gone *sniff*
+cMark: Mandy left the house to go look for him
+cMark: She didn't tell me because we were not looking to talk to each other at all
+cMandy: *sniff* I didn't want him to get more mad at me
+return
+@1
+cMandy: I went to the beach because I know he likes it there *sniff*
+cMandy: But I couldn't find him *sniff*
+cMark: It was very foggy that night if you remember
+cMandy: *sniff* Yeah I could barely see
+return
+@2
+cMark: No. There was nothing in his room. He usually tells us when he goes outside
+return
+@3
+cMandy: He is friends with the Bensons kid
+cMandy: But they didn't see him either *sniff*
+return
+@4
+stop
+]]></Script>
+                <DialogOptions>
+                  <DialogOption>
+                    <ID>1</ID>
+                    <Say>True</Say>
+                    <Show>True</Show>
+                    <Text xml:space="preserve">Where did you look for Ollie?</Text>
+                  </DialogOption>
+                  <DialogOption>
+                    <ID>2</ID>
+                    <Say>True</Say>
+                    <Show>True</Show>
+                    <Text xml:space="preserve">Did he leave anything behind?</Text>
+                  </DialogOption>
+                  <DialogOption>
+                    <ID>3</ID>
+                    <Say>True</Say>
+                    <Show>True</Show>
+                    <Text xml:space="preserve">Who is the boy friends with?</Text>
+                  </DialogOption>
+                  <DialogOption>
+                    <ID>4</ID>
+                    <Say>True</Say>
+                    <Show>True</Show>
+                    <Text xml:space="preserve">Ok. I'll keep looking for more information</Text>
+                  </DialogOption>
+                </DialogOptions>
+              </Dialog>
+            </Dialogs>
+          </DialogFolder>
+          <DialogFolder Name="Fisherman Dialogs">
+            <SubFolders />
+            <Dialogs>
+              <Dialog>
+                <ID>6</ID>
+                <Name>dFisherIntro</Name>
+                <ShowTextParser>False</ShowTextParser>
+                <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cDet: How late do you usually fish?
+cFisherman: 'Bout till sunset. Why ya askin?
+cDet: Did you here about the boy that was found dead on the beach yesterday
+cFisherman: Course I did. I was the one that reported it
+cDet: Oh ok. We think he was killed the night before
+cDet: It was really foggy that night
+cFisherman: I was home by then. 
+cDet: Ok. See ya then
+stop
+]]></Script>
+                <DialogOptions />
+              </Dialog>
+            </Dialogs>
+          </DialogFolder>
+        </SubFolders>
+        <Dialogs />
       </DialogFolder>
     </Dialogs>
     <Cursors>
@@ -3394,6 +3530,16 @@ stop
           <DefaultValue />
           <Name>backMusic</Name>
           <Type>AudioChannel*</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <DefaultValue>0</DefaultValue>
+          <Name>johnsonProgress</Name>
+          <Type>int</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <DefaultValue>0</DefaultValue>
+          <Name>fishermanProgress</Name>
+          <Type>int</Type>
         </GlobalVariable>
       </Variables>
     </GlobalVariables>
@@ -5395,6 +5541,21 @@ stop
                       <ImportAlphaChannel>True</ImportAlphaChannel>
                     </Source>
                   </Sprite>
+                  <Sprite Slot="57" Width="42" Height="24" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Fisherman-1.png.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>24</ImportHeight>
+                      <ImportWidth>42</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
                 </Sprites>
               </SpriteFolder>
             </SubFolders>
@@ -5891,6 +6052,63 @@ stop
         <SubFolders />
         <Views>
           <View>
+            <ID>1</ID>
+            <Name>PoliceIdle</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>0</ID>
+                    <Image>17</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>1</ID>
+                    <Image>18</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>0</ID>
+                    <Image>0</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>0</ID>
+                    <Image>0</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames />
+              </Loop>
+            </Loops>
+          </View>
+          <View>
             <ID>2</ID>
             <Name>Walking</Name>
             <Loops>
@@ -6033,63 +6251,6 @@ stop
             </Loops>
           </View>
           <View>
-            <ID>1</ID>
-            <Name>PoliceIdle</Name>
-            <Loops>
-              <Loop>
-                <ID>0</ID>
-                <RunNextLoop>False</RunNextLoop>
-                <Frames>
-                  <ViewFrame>
-                    <Delay>0</Delay>
-                    <Flipped>False</Flipped>
-                    <ID>0</ID>
-                    <Image>17</Image>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <Delay>0</Delay>
-                    <Flipped>False</Flipped>
-                    <ID>1</ID>
-                    <Image>18</Image>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                </Frames>
-              </Loop>
-              <Loop>
-                <ID>1</ID>
-                <RunNextLoop>False</RunNextLoop>
-                <Frames>
-                  <ViewFrame>
-                    <Delay>0</Delay>
-                    <Flipped>False</Flipped>
-                    <ID>0</ID>
-                    <Image>0</Image>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                </Frames>
-              </Loop>
-              <Loop>
-                <ID>2</ID>
-                <RunNextLoop>False</RunNextLoop>
-                <Frames>
-                  <ViewFrame>
-                    <Delay>0</Delay>
-                    <Flipped>False</Flipped>
-                    <ID>0</ID>
-                    <Image>0</Image>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                </Frames>
-              </Loop>
-              <Loop>
-                <ID>3</ID>
-                <RunNextLoop>False</RunNextLoop>
-                <Frames />
-              </Loop>
-            </Loops>
-          </View>
-          <View>
             <ID>3</ID>
             <Name>MarkJohnson</Name>
             <Loops>
@@ -6152,6 +6313,56 @@ stop
                     <Flipped>False</Flipped>
                     <ID>0</ID>
                     <Image>56</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>0</ID>
+                    <Image>0</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>0</ID>
+                    <Image>0</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames />
+              </Loop>
+            </Loops>
+          </View>
+          <View>
+            <ID>5</ID>
+            <Name>Fisher</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>0</ID>
+                    <Image>57</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                 </Frames>
