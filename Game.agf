@@ -3541,6 +3541,16 @@ stop
           <Name>fishermanProgress</Name>
           <Type>int</Type>
         </GlobalVariable>
+        <GlobalVariable>
+          <DefaultValue>false</DefaultValue>
+          <Name>paperCode</Name>
+          <Type>bool</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <DefaultValue>false</DefaultValue>
+          <Name>foundSafe</Name>
+          <Type>bool</Type>
+        </GlobalVariable>
       </Variables>
     </GlobalVariables>
     <Sprites>
