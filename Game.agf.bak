@@ -2804,7 +2804,7 @@
             <ScriptName>cFisherman</ScriptName>
             <Solid>True</Solid>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
-            <SpeechColor>52</SpeechColor>
+            <SpeechColor>2047</SpeechColor>
             <SpeechView>0</SpeechView>
             <StartX>225</StartX>
             <StartY>167</StartY>
@@ -2859,7 +2859,7 @@
             <Interactions>
               <Event Index="0" />
               <Event Index="1" />
-              <Event Index="2" />
+              <Event Index="2">cAndrew_Talk</Event>
               <Event Index="3" />
               <Event Index="4" />
               <Event Index="5" />
@@ -2901,7 +2901,7 @@
             <Interactions>
               <Event Index="0" />
               <Event Index="1" />
-              <Event Index="2" />
+              <Event Index="2">cSandra_Talk</Event>
               <Event Index="3" />
               <Event Index="4" />
               <Event Index="5" />
@@ -2943,7 +2943,7 @@
             <Interactions>
               <Event Index="0" />
               <Event Index="1" />
-              <Event Index="2" />
+              <Event Index="2">cRobert_Talk</Event>
               <Event Index="3" />
               <Event Index="4" />
               <Event Index="5" />
@@ -3139,10 +3139,6 @@ return
 cMark: No. There was nothing in his room. He usually tells us when he goes outside
 return
 @3
-cMandy: He is friends with the Bensons kid
-cMandy: But they didn't see him either *sniff*
-return
-@4
 stop
 ]]></Script>
                 <DialogOptions>
@@ -3160,12 +3156,6 @@ stop
                   </DialogOption>
                   <DialogOption>
                     <ID>3</ID>
-                    <Say>True</Say>
-                    <Show>True</Show>
-                    <Text xml:space="preserve">Who is the boy friends with?</Text>
-                  </DialogOption>
-                  <DialogOption>
-                    <ID>4</ID>
                     <Say>True</Say>
                     <Show>True</Show>
                     <Text xml:space="preserve">Ok. I'll keep looking for more information</Text>
@@ -3201,7 +3191,94 @@ stop
                 <ShowTextParser>False</ShowTextParser>
                 <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
-cDet: Test
+cDet: What's inside that safe in your shack?
+cFisherman: What's it to you?
+cDet: I found these torn up pieces of paper along the beach earlier
+cDet: They formed the code 4927 and had an image of a safe that looks just like yours
+cFisherman: Yeah I tore those up because I felt like I had memorized the code
+cDet: So what do you keep in there?
+cFisherman: None of your business
+cDet: I know the code, I'll just go check myself
+cFisherman: Fine. Fine. Fine.
+cFisherman: It's just tapes from the camera I have overlooking the ocean
+cFisherman: Helps me see the tides and stuff like that to know the best times to fish
+cDet: Where do you keep the camera?
+cFisherman: On the post behind the Fullers house
+cDet: Do you have the tape from the other night in there?
+cFisherman: Yeah actually, I just took it out yesterday
+cDet: Do you mind if I take a look at it?
+cFisherman: Sure I guess
+cFisherman: But only that one
+cDet: Thanks
+stop
+]]></Script>
+                <DialogOptions />
+              </Dialog>
+            </Dialogs>
+          </DialogFolder>
+          <DialogFolder Name="Sandra Dialogs">
+            <SubFolders />
+            <Dialogs>
+              <Dialog>
+                <ID>8</ID>
+                <Name>dSandra</Name>
+                <ShowTextParser>False</ShowTextParser>
+                <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cDet: Hey Sandra
+cSandra: Hi Holmes!!
+cDet: Is Jayden around?
+cSandra: No. He's at work. Is something wrong?
+cDet: Nope, just wanted to see if you guys had any information about the Johnson's kid
+cSandra: No actually. We know nothing about it. It's super unfortanate Mandy is having a breakdown
+cDet: That's ok. She seems to be doing a bit better today. Thanks
+cSandra: Of course!!! Stop by sometime soon!
+stop
+]]></Script>
+                <DialogOptions />
+              </Dialog>
+            </Dialogs>
+          </DialogFolder>
+          <DialogFolder Name="Andrew Dialogs">
+            <SubFolders />
+            <Dialogs>
+              <Dialog>
+                <ID>9</ID>
+                <Name>dBensonDoor</Name>
+                <ShowTextParser>False</ShowTextParser>
+                <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cDet: Does the code 4927 mean anything to you?
+cAndrew: No siree. What does it mean?
+cDet: I found some torn up pieces of paper on the beach earlier
+cDet: When I put them together it formed the code 4927 and had an image of a door that looks like yours
+cAndrew: Do you have it with you?
+cDet: Yeah. *you show him the paper*
+cAndrew: Yeah that does look a bit like our door. Could it possibly be for a safe though?
+cDet: I haven't thought of that. I'll check it out. Thanks
+cAndrew: No problemo!
+stop
+]]></Script>
+                <DialogOptions />
+              </Dialog>
+            </Dialogs>
+          </DialogFolder>
+          <DialogFolder Name="Robert Dialogs">
+            <SubFolders />
+            <Dialogs>
+              <Dialog>
+                <ID>10</ID>
+                <Name>dRobert</Name>
+                <ShowTextParser>False</ShowTextParser>
+                <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cDet: How's it going?
+cRobert: Alright for my days I reckon
+cDet: By any chance did you see anyone walking to the beach the other night?
+cDet: When the Johnson's kid was murdered?
+cRobert: Not at all. It was way too foggy and my eyesights bad enough as it is
+cDet: Alright. Have a good day
+cRobert: You too
 stop
 ]]></Script>
                 <DialogOptions />
@@ -3687,6 +3764,31 @@ stop
           <DefaultValue>false</DefaultValue>
           <Name>foundSafe</Name>
           <Type>bool</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <DefaultValue>0</DefaultValue>
+          <Name>sandraIntro</Name>
+          <Type>int</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <DefaultValue>false</DefaultValue>
+          <Name>tapesCollected</Name>
+          <Type>bool</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <DefaultValue>false</DefaultValue>
+          <Name>tapesWatched</Name>
+          <Type>bool</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <DefaultValue>0</DefaultValue>
+          <Name>andrewProgress</Name>
+          <Type>int</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <DefaultValue>0</DefaultValue>
+          <Name>robertIntro</Name>
+          <Type>int</Type>
         </GlobalVariable>
       </Variables>
     </GlobalVariables>
