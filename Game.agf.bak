@@ -12,7 +12,7 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>3</AudioIndexer>
+      <AudioIndexer>6</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BuildTargets xml:space="preserve">Windows, Web</BuildTargets>
@@ -693,9 +693,9 @@
         <GUIs>
           <GUIMain>
             <NormalGUI>
-              <BackgroundColor>32089</BackgroundColor>
+              <BackgroundColor>27469</BackgroundColor>
               <BackgroundImage>0</BackgroundImage>
-              <BorderColor>32089</BorderColor>
+              <BorderColor>0</BorderColor>
               <Clickable>True</Clickable>
               <Height>14</Height>
               <ID>0</ID>
@@ -720,13 +720,13 @@
                 <Left>2</Left>
                 <Locked>False</Locked>
                 <Name>lblGameName</Name>
-                <Text>@GAMENAME@</Text>
+                <Text xml:space="preserve">Mystery of the Foggy Cliffside</Text>
                 <TextAlignment>Left</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextColor>0</TextColor>
                 <Top>1</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>100</Width>
+                <Width>300</Width>
                 <ZOrder>0</ZOrder>
               </GUILabel>
               <GUILabel>
@@ -738,7 +738,7 @@
                 <Left>250</Left>
                 <Locked>False</Locked>
                 <Name>lblScore</Name>
-                <Text xml:space="preserve">Score: @SCORE@</Text>
+                <Text />
                 <TextAlignment>Left</TextAlignment>
                 <TextColor>19248</TextColor>
                 <Top>1</Top>
@@ -757,8 +757,8 @@
                 <Locked>False</Locked>
                 <Name>lblOverHotspot</Name>
                 <Text>@OVERHOTSPOT@</Text>
-                <TextAlignment>Center</TextAlignment>
-                <TextColor>19248</TextColor>
+                <TextAlignment>Right</TextAlignment>
+                <TextColor>0</TextColor>
                 <Top>1</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
@@ -769,9 +769,9 @@
           </GUIMain>
           <GUIMain>
             <NormalGUI>
-              <BackgroundColor>32089</BackgroundColor>
+              <BackgroundColor>27469</BackgroundColor>
               <BackgroundImage>0</BackgroundImage>
-              <BorderColor>32089</BorderColor>
+              <BorderColor>0</BorderColor>
               <Clickable>True</Clickable>
               <Height>29</Height>
               <ID>1</ID>
@@ -795,21 +795,21 @@
                 <Font>0</Font>
                 <Height>27</Height>
                 <ID>0</ID>
-                <Image>2100</Image>
+                <Image>70</Image>
                 <Left>1</Left>
                 <Locked>False</Locked>
-                <MouseoverImage>2101</MouseoverImage>
+                <MouseoverImage>69</MouseoverImage>
                 <Name>btnIconWalk</Name>
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick />
-                <PushedImage>2102</PushedImage>
+                <PushedImage>69</PushedImage>
                 <Text />
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>16</TextColor>
                 <Top>1</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>32</Width>
+                <Width>30</Width>
                 <ZOrder>0</ZOrder>
               </GUIButton>
               <GUIButton>
@@ -820,21 +820,21 @@
                 <Font>0</Font>
                 <Height>27</Height>
                 <ID>1</ID>
-                <Image>2104</Image>
+                <Image>64</Image>
                 <Left>33</Left>
                 <Locked>False</Locked>
-                <MouseoverImage>2105</MouseoverImage>
+                <MouseoverImage>63</MouseoverImage>
                 <Name>btnIconExamine</Name>
                 <NewModeNumber>1</NewModeNumber>
                 <OnClick />
-                <PushedImage>2106</PushedImage>
+                <PushedImage>63</PushedImage>
                 <Text />
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>16</TextColor>
                 <Top>1</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>32</Width>
+                <Width>30</Width>
                 <ZOrder>1</ZOrder>
               </GUIButton>
               <GUIButton>
@@ -845,21 +845,21 @@
                 <Font>0</Font>
                 <Height>27</Height>
                 <ID>2</ID>
-                <Image>2108</Image>
+                <Image>68</Image>
                 <Left>65</Left>
                 <Locked>False</Locked>
-                <MouseoverImage>2109</MouseoverImage>
+                <MouseoverImage>67</MouseoverImage>
                 <Name>btnIconInteract</Name>
                 <NewModeNumber>2</NewModeNumber>
                 <OnClick />
-                <PushedImage>2110</PushedImage>
+                <PushedImage>67</PushedImage>
                 <Text />
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>16</TextColor>
                 <Top>1</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>32</Width>
+                <Width>30</Width>
                 <ZOrder>2</ZOrder>
               </GUIButton>
               <GUIButton>
@@ -870,21 +870,21 @@
                 <Font>0</Font>
                 <Height>27</Height>
                 <ID>3</ID>
-                <Image>2112</Image>
+                <Image>66</Image>
                 <Left>97</Left>
                 <Locked>False</Locked>
-                <MouseoverImage>2113</MouseoverImage>
+                <MouseoverImage>65</MouseoverImage>
                 <Name>btnIconTalk</Name>
                 <NewModeNumber>3</NewModeNumber>
                 <OnClick />
-                <PushedImage>2114</PushedImage>
+                <PushedImage>65</PushedImage>
                 <Text />
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>16</TextColor>
                 <Top>1</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>32</Width>
+                <Width>30</Width>
                 <ZOrder>3</ZOrder>
               </GUIButton>
               <GUIButton>
@@ -895,21 +895,21 @@
                 <Font>0</Font>
                 <Height>27</Height>
                 <ID>4</ID>
-                <Image>2120</Image>
+                <Image>72</Image>
                 <Left>129</Left>
                 <Locked>False</Locked>
-                <MouseoverImage>2121</MouseoverImage>
+                <MouseoverImage>71</MouseoverImage>
                 <Name>btnIconInv</Name>
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>btnIconInv_Click</OnClick>
-                <PushedImage>2122</PushedImage>
+                <PushedImage>71</PushedImage>
                 <Text />
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>16</TextColor>
                 <Top>1</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>32</Width>
+                <Width>30</Width>
                 <ZOrder>4</ZOrder>
               </GUIButton>
               <GUIButton>
@@ -920,21 +920,21 @@
                 <Font>0</Font>
                 <Height>27</Height>
                 <ID>5</ID>
-                <Image>2124</Image>
+                <Image>73</Image>
                 <Left>161</Left>
                 <Locked>False</Locked>
-                <MouseoverImage>2124</MouseoverImage>
+                <MouseoverImage>73</MouseoverImage>
                 <Name>btnIconCurInv</Name>
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>btnIconCurInv_Click</OnClick>
-                <PushedImage>2126</PushedImage>
+                <PushedImage>73</PushedImage>
                 <Text>(INVSHR)</Text>
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>16</TextColor>
                 <Top>1</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>32</Width>
+                <Width>30</Width>
                 <ZOrder>5</ZOrder>
               </GUIButton>
               <GUIButton>
@@ -2428,7 +2428,7 @@
           </InventoryItem>
           <InventoryItem>
             <CursorImage>2042</CursorImage>
-            <Description xml:space="preserve">Keys to Police Department</Description>
+            <Description>Keys</Description>
             <HotspotX>0</HotspotX>
             <HotspotY>0</HotspotY>
             <ID>15</ID>
@@ -2906,7 +2906,7 @@
             <ScriptName>cSandra</ScriptName>
             <Solid>True</Solid>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
-            <SpeechColor>512</SpeechColor>
+            <SpeechColor>1504</SpeechColor>
             <SpeechView>0</SpeechView>
             <StartX>149</StartX>
             <StartY>109</StartY>
@@ -5803,6 +5803,171 @@ stop
                       <ImportAlphaChannel>True</ImportAlphaChannel>
                     </Source>
                   </Sprite>
+                  <Sprite Slot="63" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Search Status-1.png.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>27</ImportHeight>
+                      <ImportWidth>30</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="64" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Search Status-1.png (1).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>27</ImportHeight>
+                      <ImportWidth>30</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="67" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Grab Status-1.png.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>27</ImportHeight>
+                      <ImportWidth>30</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="68" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Grab Status-1.png (1).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>27</ImportHeight>
+                      <ImportWidth>30</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="69" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Boot Status-1.png (2).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>27</ImportHeight>
+                      <ImportWidth>30</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="70" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Boot Status-1.png (3).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>27</ImportHeight>
+                      <ImportWidth>30</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="65" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Talk Status-1.png (1).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>27</ImportHeight>
+                      <ImportWidth>30</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="66" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Talk Status-1.png.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>27</ImportHeight>
+                      <ImportWidth>30</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="71" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Inv Status-1.png.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>27</ImportHeight>
+                      <ImportWidth>30</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="72" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Inv Status-1.png (1).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>27</ImportHeight>
+                      <ImportWidth>30</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="73" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Blank Slate-1.png.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>27</ImportHeight>
+                      <ImportWidth>30</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
                 </Sprites>
               </SpriteFolder>
               <SpriteFolder Name="Characters">
@@ -6975,6 +7140,32 @@ See KeyboardMovement.txt for details.
                 <SourceFileName>C:\Users\jfiorill\Downloads\Loyalty_Freak_Music_-_01_-_Go_to_the_Picnicchosic.com_(chosic.com).mp3</SourceFileName>
                 <Type>2</Type>
                 <FileLastModifiedDate>2024-10-02 15:13:46Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InSeparateVOX</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>2</ID>
+                <Index>4</Index>
+                <ScriptName>aOceanWaves</ScriptName>
+                <SourceFileName>C:\Users\jfiorill\Downloads\jackmichaelking__gentle-ocean-waves-birdsong-and-gull(chosic.com).mp3</SourceFileName>
+                <Type>2</Type>
+                <FileLastModifiedDate>2024-10-30 21:17:12Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InSeparateVOX</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>50</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>3</ID>
+                <Index>6</Index>
+                <ScriptName>aHouse</ScriptName>
+                <SourceFileName>C:\Users\jfiorill\Downloads\Fluffing-a-Duck(chosic.com).mp3</SourceFileName>
+                <Type>2</Type>
+                <FileLastModifiedDate>2024-10-30 21:21:11Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
