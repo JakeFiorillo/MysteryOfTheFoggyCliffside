@@ -945,21 +945,21 @@
                 <Font>0</Font>
                 <Height>27</Height>
                 <ID>6</ID>
-                <Image>2128</Image>
+                <Image>75</Image>
                 <Left>193</Left>
                 <Locked>False</Locked>
-                <MouseoverImage>2129</MouseoverImage>
+                <MouseoverImage>74</MouseoverImage>
                 <Name>btnIconSave</Name>
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>btnIconSave_Click</OnClick>
-                <PushedImage>2130</PushedImage>
+                <PushedImage>74</PushedImage>
                 <Text />
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>16</TextColor>
                 <Top>1</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>32</Width>
+                <Width>30</Width>
                 <ZOrder>6</ZOrder>
               </GUIButton>
               <GUIButton>
@@ -970,21 +970,21 @@
                 <Font>0</Font>
                 <Height>27</Height>
                 <ID>7</ID>
-                <Image>2132</Image>
+                <Image>77</Image>
                 <Left>225</Left>
                 <Locked>False</Locked>
-                <MouseoverImage>2133</MouseoverImage>
+                <MouseoverImage>76</MouseoverImage>
                 <Name>btnIconLoad</Name>
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>btnIconLoad_Click</OnClick>
-                <PushedImage>2134</PushedImage>
+                <PushedImage>76</PushedImage>
                 <Text />
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>16</TextColor>
                 <Top>1</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>32</Width>
+                <Width>30</Width>
                 <ZOrder>7</ZOrder>
               </GUIButton>
               <GUIButton>
@@ -995,21 +995,21 @@
                 <Font>0</Font>
                 <Height>27</Height>
                 <ID>8</ID>
-                <Image>2140</Image>
+                <Image>81</Image>
                 <Left>289</Left>
                 <Locked>False</Locked>
-                <MouseoverImage>2141</MouseoverImage>
+                <MouseoverImage>80</MouseoverImage>
                 <Name>btnIconExit</Name>
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>btnIconExit_Click</OnClick>
-                <PushedImage>2142</PushedImage>
+                <PushedImage>80</PushedImage>
                 <Text />
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>16</TextColor>
                 <Top>1</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>32</Width>
+                <Width>30</Width>
                 <ZOrder>8</ZOrder>
               </GUIButton>
               <GUIButton>
@@ -1020,21 +1020,21 @@
                 <Font>0</Font>
                 <Height>27</Height>
                 <ID>9</ID>
-                <Image>2136</Image>
+                <Image>79</Image>
                 <Left>257</Left>
                 <Locked>False</Locked>
-                <MouseoverImage>2137</MouseoverImage>
+                <MouseoverImage>78</MouseoverImage>
                 <Name>btnIconPanel</Name>
                 <NewModeNumber>0</NewModeNumber>
                 <OnClick>btnIconPanel_Click</OnClick>
-                <PushedImage>2138</PushedImage>
+                <PushedImage>78</PushedImage>
                 <Text />
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>16</TextColor>
                 <Top>1</Top>
                 <Translated>True</Translated>
                 <Visible>True</Visible>
-                <Width>32</Width>
+                <Width>30</Width>
                 <ZOrder>9</ZOrder>
               </GUIButton>
             </Controls>
@@ -5956,6 +5956,126 @@ stop
                   <Sprite Slot="73" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
                       <FileName>C:\Users\jfiorill\Downloads\Blank Slate-1.png.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>27</ImportHeight>
+                      <ImportWidth>30</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="74" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Open Status-1.png.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>27</ImportHeight>
+                      <ImportWidth>30</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="75" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Open Status-1.png (1).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>27</ImportHeight>
+                      <ImportWidth>30</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="76" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Open Status-1.png (2).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>27</ImportHeight>
+                      <ImportWidth>30</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="77" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Open Status-1.png (3).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>27</ImportHeight>
+                      <ImportWidth>30</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="78" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Settings Status-1.png.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>27</ImportHeight>
+                      <ImportWidth>30</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="79" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Settings Status-1.png (1).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>27</ImportHeight>
+                      <ImportWidth>30</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="80" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Blank Slate-1.png (1).png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>27</ImportHeight>
+                      <ImportWidth>30</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="81" Width="30" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Blank Slate-1.png (2).png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
                       <ImportHeight>27</ImportHeight>
