@@ -3193,7 +3193,7 @@ stop
 @S  // Dialog startup entry point
 cDet: How late do you usually fish?
 cFisherman: 'Bout till sunset. Why ya askin?
-cDet: Did you here about the boy that was found dead on the beach yesterday
+cDet: Did you hear about the boy that was found dead on the beach yesterday
 cFisherman: Course I did. I was the one that reported it
 cDet: Oh ok. We think he was killed the night before
 cDet: It was really foggy that night
