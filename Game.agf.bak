@@ -2667,7 +2667,7 @@
             <Interactions>
               <Event Index="0" />
               <Event Index="1" />
-              <Event Index="2" />
+              <Event Index="2">cDet_Talk</Event>
               <Event Index="3" />
               <Event Index="4" />
               <Event Index="5" />
@@ -3124,6 +3124,17 @@ stop
                   </DialogOption>
                 </DialogOptions>
               </Dialog>
+              <Dialog>
+                <ID>13</ID>
+                <Name>dRobertCaught</Name>
+                <ShowTextParser>False</ShowTextParser>
+                <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cDet: test
+stop
+]]></Script>
+                <DialogOptions />
+              </Dialog>
             </Dialogs>
           </DialogFolder>
           <DialogFolder Name="Johnson Dialogs">
@@ -3297,6 +3308,41 @@ cDet: When the Johnson's kid was murdered?
 cRobert: Not at all. It was way too foggy and my eyesights bad enough as it is
 cDet: Alright. Have a good day
 cRobert: You too
+stop
+]]></Script>
+                <DialogOptions />
+              </Dialog>
+              <Dialog>
+                <ID>11</ID>
+                <Name>dTapeRobert</Name>
+                <ShowTextParser>False</ShowTextParser>
+                <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cDet: How's it going?
+cRobert: Alright for my days I reckon
+cDet: By any chance did you see anyone walking to the beach the other night?
+cDet: When the Johnson's kid was murdered?
+cRobert: Not at all. It was way too foggy and my eyesights bad enough as it is
+cDet: Alright. Thats interesting then
+cRobert: Hows that?
+cDet: I have a video tape of you going to and from the beach twice that night with Mandy
+cRobert: It wasn't me
+cDet: Well you can come back to the police department and see for yourself
+stop
+]]></Script>
+                <DialogOptions />
+              </Dialog>
+              <Dialog>
+                <ID>12</ID>
+                <Name>dRobertLie</Name>
+                <ShowTextParser>False</ShowTextParser>
+                <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cDet: So you said you didn't see anyone the other night when the Johnsons kid was murdered?
+cRobert: Nope. Not at all
+cDet: Well I have a video tape of you going to and from the beach twice that night with Mandy
+cRobert: How are you sure it was me? 
+cDet: Well you can come back to the police department and see for yourself
 stop
 ]]></Script>
                 <DialogOptions />
