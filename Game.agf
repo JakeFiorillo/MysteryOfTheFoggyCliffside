@@ -3347,6 +3347,18 @@ stop
 ]]></Script>
                 <DialogOptions />
               </Dialog>
+              <Dialog>
+                <ID>14</ID>
+                <Name>dJail</Name>
+                <ShowTextParser>False</ShowTextParser>
+                <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cTom: Robert, what were YOU DOING with MANDY that night at the beach
+cRobert: 
+return
+]]></Script>
+                <DialogOptions />
+              </Dialog>
             </Dialogs>
           </DialogFolder>
         </SubFolders>
