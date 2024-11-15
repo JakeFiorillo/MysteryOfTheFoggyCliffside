@@ -3191,6 +3191,66 @@ stop
                   </DialogOption>
                 </DialogOptions>
               </Dialog>
+              <Dialog>
+                <ID>15</ID>
+                <Name>dMarkCheat</Name>
+                <ShowTextParser>False</ShowTextParser>
+                <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cMark: How's the case going Holmes
+cDet: We think we have our culprit, but we just need to find a motive
+cMark: Can you tell us anything?
+cDet: In a bit. I wanted to ask if Mandy has been leaving the house pretty often for longer periods of time
+cMark: Yeah she says she is going to hang out with Sandra a lot
+cDet: Have you ever suspected her to cheat on you?
+cMark: WHAT?
+cMandy: What's wrong?
+cMark: WHO HAVE YOU BEEN CHEATING ON ME WITH?
+cDet: Mark we don't know if thats true
+cMandy: *sniff* I'm sorry Mark I didn't think you would find out
+cDet: Robert said they have been meeting up 
+cMandy: I just do it for his money. He practically spoils me
+cMark: THIS IS RIDICULOUS MANDY
+cMark: NO WONDER YOU INVITE HIM OVER ALL THE TIME
+cMandy: *sniff* How did you learn that Holmes *sniff*
+cDet: We got footage from the fishermans camera behind the Fullers house
+cDet: We think Robert pushed the boy off the cliff when he left you alone on the beach
+cDet: Would he have any motive to do that?
+cMandy: Maybe, but that would be crazy for him to do *sniff*
+cDet: Well what would that reason be?
+cMandy: Ollie never really likes it when he comes over
+cMandy: Ollie was the only reason I stayed with Mark, because he never really had a connection with Robert
+cMark: SO ITS ALL YOUR FAULT OUR BOY IS DEAD
+cMark: I CANT BELIEVE YOU
+cDet: I'm gonna go, I'll be at the department if you need anything
+stop
+]]></Script>
+                <DialogOptions />
+              </Dialog>
+              <Dialog>
+                <ID>16</ID>
+                <Name>dMandyCheat</Name>
+                <ShowTextParser>False</ShowTextParser>
+                <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cDet: Mandy I have a question I need you to answer truthfully
+cMandy: What is it?
+cDet: Have you been cheating on Mark with Robert
+cMandy: *mumbling* yes
+cDet: Why?
+cMandy: Because he has a lot of money that he provides me
+cDet: And why have you never split up with Mark?
+cMandy: Because Ollie doesn't really like Robert
+cDet: Well that might be a good motive
+cDet: When Robert left you alone on the beach for a couple minutes we think he pushed Ollie off the cliff
+cDet: He was probably sitting on the edge rather than on the beach which is why you couldn't see him
+cMandy: *sniff* I can't believe he would do that *sniff*
+cDet: I'm gonna go, but you should come clean to Mark
+cMandy: *sniff* ok
+stop
+]]></Script>
+                <DialogOptions />
+              </Dialog>
             </Dialogs>
           </DialogFolder>
           <DialogFolder Name="Fisherman Dialogs">
