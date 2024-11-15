@@ -3347,6 +3347,27 @@ stop
 ]]></Script>
                 <DialogOptions />
               </Dialog>
+              <Dialog>
+                <ID>14</ID>
+                <Name>dJail</Name>
+                <ShowTextParser>False</ShowTextParser>
+                <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cPolice: Robert, what were YOU DOING with MANDY the other night
+cRobert: Nothing sir, she just said her boy ran away so I went with her to help look for him
+cPolice: And WHY did you GO BACK UP THE TRAIL in the middle of all that
+cRobert: Ok sir let me come clean
+cRobert: Mandy and I have been seeing each other without Mark knowing
+cPolice: WOW you are A CRAZY MAN
+cDet: So when you left the beach the first time what did you do?
+cRobert: I just left for a couple minutes to give Mandy some time alone
+cDet: And thats probably also when you pushed the boy off the cliff
+cRobert: I have no reason to kill a child
+cPolice: HOLMES, stop making assumptions and GO talk to Mandy and Mark NOW
+stop
+]]></Script>
+                <DialogOptions />
+              </Dialog>
             </Dialogs>
           </DialogFolder>
         </SubFolders>
