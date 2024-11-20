@@ -2527,7 +2527,7 @@
               <ID>11</ID>
               <Left>0</Left>
               <Name>gStartup3</Name>
-              <OnClick />
+              <OnClick>gStartup3_OnClick</OnClick>
               <PopupStyle>Normal</PopupStyle>
               <PopupYPos>0</PopupYPos>
               <Top>0</Top>
@@ -2607,7 +2607,7 @@
                 <Left>52</Left>
                 <Locked>False</Locked>
                 <Name>Label10</Name>
-                <Text xml:space="preserve">M = Open Map</Text>
+                <Text xml:space="preserve">M = Open/Close Map</Text>
                 <TextAlignment>Left</TextAlignment>
                 <TextColor>0</TextColor>
                 <Top>79</Top>
@@ -2653,6 +2653,27 @@
                 <ZOrder>5</ZOrder>
               </GUILabel>
             </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <BackgroundColor>8</BackgroundColor>
+              <BackgroundImage>90</BackgroundImage>
+              <BorderColor>0</BorderColor>
+              <Clickable>True</Clickable>
+              <Height>180</Height>
+              <ID>12</ID>
+              <Left>25</Left>
+              <Name>gMap</Name>
+              <OnClick>gMap_OnClick</OnClick>
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <Top>17</Top>
+              <Transparency>0</Transparency>
+              <Visible>False</Visible>
+              <Width>270</Width>
+              <ZOrder>0</ZOrder>
+            </NormalGUI>
+            <Controls />
           </GUIMain>
         </GUIs>
       </GUIFolder>
@@ -6930,6 +6951,21 @@ stop
                       <OffsetY>0</OffsetY>
                       <ImportHeight>200</ImportHeight>
                       <ImportWidth>320</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="90" Width="270" Height="180" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>C:\Users\jfiorill\Downloads\Neighborhood_Updated-1.png (1)-1.png-1.png.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>180</ImportHeight>
+                      <ImportWidth>270</ImportWidth>
                       <ImportAsTile>False</ImportAsTile>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
