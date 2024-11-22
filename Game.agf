@@ -684,6 +684,10 @@
             <Description xml:space="preserve">Roberts House</Description>
             <Number>8</Number>
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Description>End</Description>
+            <Number>9</Number>
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
@@ -2675,6 +2679,46 @@
             </NormalGUI>
             <Controls />
           </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <BackgroundColor>8</BackgroundColor>
+              <BackgroundImage>89</BackgroundImage>
+              <BorderColor>2</BorderColor>
+              <Clickable>True</Clickable>
+              <Height>200</Height>
+              <ID>13</ID>
+              <Left>0</Left>
+              <Name>gEnding</Name>
+              <OnClick />
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <Top>0</Top>
+              <Transparency>0</Transparency>
+              <Visible>False</Visible>
+              <Width>320</Width>
+              <ZOrder>0</ZOrder>
+            </NormalGUI>
+            <Controls>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>66</Height>
+                <ID>0</ID>
+                <Left>80</Left>
+                <Locked>False</Locked>
+                <Name>Label15</Name>
+                <Text xml:space="preserve">Congratulations! You have solved the mystery of the foggy cliffside! Thanks for playing!</Text>
+                <TextAlignment>Center</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>73</Top>
+                <Translated>True</Translated>
+                <Visible>True</Visible>
+                <Width>163</Width>
+                <ZOrder>0</ZOrder>
+              </GUILabel>
+            </Controls>
+          </GUIMain>
         </GUIs>
       </GUIFolder>
     </GUIs>
@@ -3649,6 +3693,26 @@ stop
 ]]></Script>
                 <DialogOptions />
               </Dialog>
+              <Dialog>
+                <ID>17</ID>
+                <Name>dConclusion</Name>
+                <ShowTextParser>False</ShowTextParser>
+                <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+cPolice: What do you have for me Holmes?
+cDet: Mandy says that Ollie has never gotten along with Robert well
+cDet: Which is the reason she has stayed with Mark
+cPolice: SO ROBERT PUSHED THE BOY OFF THE CLIFF TO GET RID OF THAT ONE REASON
+cDet: Exactly what I'm thinking
+cPolice: WOW IM A GENIUS
+cPolice: WELL ROBERT GET COMFORTABLE IN THAT JAIL CELL, YOULL BE THERE FOR A WHILE
+cRobert: *sigh*
+cPolice: Great work Holmes, I'm proud of you
+stop
+
+]]></Script>
+                <DialogOptions />
+              </Dialog>
             </Dialogs>
           </DialogFolder>
           <DialogFolder Name="Johnson Dialogs">
@@ -3759,7 +3823,7 @@ cDet: Well that might be a good motive
 cDet: When Robert left you alone on the beach for a couple minutes we think he pushed Ollie off the cliff
 cDet: He was probably sitting on the edge rather than on the beach which is why you couldn't see him
 cMandy: *sniff* I can't believe he would do that *sniff*
-cDet: I'm gonna go, but you should come clean to Mark
+cDet: I'm gonna go back to the department, but you should come clean to Mark
 cMandy: *sniff* ok
 stop
 ]]></Script>
@@ -3782,8 +3846,8 @@ cDet: Did you hear about the boy that was found dead on the beach yesterday
 cFisherman: Course I did. I was the one that reported it
 cDet: Oh ok. We think he was killed the night before
 cDet: It was really foggy that night
-cFisherman: I was home by then. 
-cDet: Ok. See ya then
+cFisherman: I was home by then
+cDet: Ok
 stop
 ]]></Script>
                 <DialogOptions />
