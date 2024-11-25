@@ -12,7 +12,7 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>6</AudioIndexer>
+      <AudioIndexer>7</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BuildTargets xml:space="preserve">Windows, Web</BuildTargets>
@@ -9035,6 +9035,19 @@ See KeyboardMovement.txt for details.
                 <SourceFileName>C:\Users\jfiorill\Downloads\3-up-1-89190.mp3</SourceFileName>
                 <Type>3</Type>
                 <FileLastModifiedDate>2024-10-02 15:30:47Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>4</ID>
+                <Index>7</Index>
+                <ScriptName>aSafeOpen</ScriptName>
+                <SourceFileName>C:\Users\jfiorill\Downloads\lock-sound-effect-247455.mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2024-11-25 23:24:17Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
